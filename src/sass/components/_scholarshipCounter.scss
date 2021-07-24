@@ -1,0 +1,39 @@
+.scholarship-counter {
+  margin-top: 5rem;
+  width: 100%;
+
+  @include breakpoint-up(medium) {
+    flex-direction: column;
+  }
+
+  .scholarship-counter__image {
+    img {
+      height: 80%;
+      width: 80%;
+    }
+
+    #boy {
+      animation: slowShake 1s infinite alternate ease-in-out;
+    }
+  }
+
+  .scholarship-counter__title {
+    font-size: 6.25rem;
+    text-align: center;
+  }
+
+  .scholarship-counter__description {
+    text-align: center;
+    font-size: $p;
+  }
+}
+
+@keyframes slowShake {
+  0% {
+    transform: rotateX(-20deg);
+  }
+
+  100% {
+    transform: rotateX(10deg);
+  }
+}

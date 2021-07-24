@@ -1,0 +1,18 @@
+.lazy-load {
+  transform: translateX(-6.25rem);
+  opacity: 0;
+}
+
+.lazy-load-start {
+  animation: leftToRight 1s ease forwards;
+}
+
+@keyframes leftToRight {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

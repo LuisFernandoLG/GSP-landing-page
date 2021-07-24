@@ -1,0 +1,35 @@
+.requirements {
+  margin-top: 3.125rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  gap: 1.25rem;
+
+  //   @include breakpoint-up(small) {
+  //     grid-template-columns: repeat(auto-fit, 300px);
+  //   }
+  .requirements__title {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .requirement {
+    box-shadow: $box-shadow-light;
+    padding: 1.25rem;
+    gap: 1.25rem;
+
+    // justify-self: center;
+
+    .requirement__icon {
+      font-size: $h3;
+    }
+
+    .requirement__title {
+      font-size: $h3;
+    }
+
+    .requirement__description {
+      font-size: $p;
+      line-height: 2;
+    }
+  }
+}

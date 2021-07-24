@@ -1,0 +1,18 @@
+@import "font-size";
+@import "mixins";
+@import "colors";
+@import "globals";
+
+@import "animations";
+
+// Components
+@import "./components/container";
+@import "./components/nav";
+@import "./components/heroSection";
+@import "./components/benefits";
+@import "./components/scholarshipCounter";
+// @import "./components/howToApply";
+@import "./components/requirements";
+@import "./components/graduates";
+
+@import "./components/footer";

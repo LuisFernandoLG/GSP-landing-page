@@ -1,0 +1,33 @@
+//   small: 540px,
+//   medium: 760px,
+//   large: 1024px,
+//   xlarge: 1400px,
+
+$breakpoints: (
+  small: 33.75rem,
+  medium: 47.5rem,
+  large: 64rem,
+  xlarge: 87.5rem,
+);
+
+// Mobile First
+@mixin breakpoint-up($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (max-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "El breakpoint #{$size} no existe";
+  }
+}
+
+// Mobile design
+@mixin breakpoint-down($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "El breakpoint #{$size} no existe";
+  }
+}
