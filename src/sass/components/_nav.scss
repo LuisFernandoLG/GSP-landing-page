@@ -1,5 +1,9 @@
 .header {
   height: 80px;
+  position: sticky;
+  top: 0;
+  background: $primary-color;
+  z-index: 50;
 
   // background: red;
 
@@ -19,7 +23,7 @@
     span {
       display: block;
 
-      height: 0.1875rem;
+      height: 0.2875rem;
       width: 1.5625rem;
       background: $tertiary-color;
 
@@ -27,37 +31,95 @@
     }
   }
 
-  .nav {
-    gap: 1.5625rem;
+  // Mobile Menu
+  @include breakpoint-up(medium) {
+    .nav {
+      z-index: 100;
+      top: 1rem;
+      right: 0;
+      position: fixed;
+      width: 50vw;
+      height: 85vh;
 
-    .nav__link {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: $tertiary-color;
+      box-shadow: $box-shadow-light;
+      background: $primary-color;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
 
-      position: relative;
+      display: none;
+      flex-direction: column;
+      .nav__close-btn {
+        position: relative;
+        padding: 0.625rem;
 
-      overflow-x: hidden;
-      padding: 10px 0;
-
-      //
-      &::after {
-        position: absolute;
-        content: "";
-
-        background: $secondary-color;
-
-        display: block;
-        width: 100%;
-        height: 4px;
-
-        transform: translateX(-120%);
-        transition: ease 0.3s;
+        i {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-size: $h2;
+          color: $tertiary-color;
+          text-align: center;
+        }
       }
 
-      &:hover::after {
-        transform: translateX(0);
+      .nav__link {
+        width: 100%;
+        flex-grow: 1;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: $h3;
+        font-weight: 700;
+        color: $tertiary-color;
+      }
+    }
+
+    .show {
+      display: flex;
+    }
+  }
+
+  // Desktop menu
+  @include breakpoint-down(medium) {
+    .nav {
+      gap: 1.5625rem;
+
+      .nav__link {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $tertiary-color;
+
+        position: relative;
+
+        overflow-x: hidden;
+        padding: 10px 0;
+
+        //
+        &::after {
+          position: absolute;
+          content: "";
+
+          background: $secondary-color;
+
+          display: block;
+          width: 100%;
+          height: 4px;
+
+          transform: translateX(-120%);
+          transition: ease 0.3s;
+        }
+
+        &:hover::after {
+          transform: translateX(0);
+        }
       }
     }
   }
+}
+
+.show {
+  display: flex;
 }

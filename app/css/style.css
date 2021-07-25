@@ -62,6 +62,12 @@ a:visited {
           justify-content: space-between;
 }
 
+.flex-jc-r {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
 @media screen and (max-width: 47.5rem) {
   .hide-for-mobile {
     display: none;
@@ -72,6 +78,10 @@ a:visited {
   .hide-for-desktop {
     display: none;
   }
+}
+
+ul li {
+  list-style: none;
 }
 
 *::-moz-selection {
@@ -87,6 +97,10 @@ a:visited {
   color: #f5f9fa;
   font-weight: 700;
   border-radius: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 47.5rem) {
@@ -136,6 +150,11 @@ a:visited {
 
 .header {
   height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #f5f9fa;
+  z-index: 50;
 }
 
 .header .logo {
@@ -155,41 +174,103 @@ a:visited {
 
 .header .menu span {
   display: block;
-  height: 0.1875rem;
+  height: 0.2875rem;
   width: 1.5625rem;
   background: #707070;
   border-radius: 1rem;
 }
 
-.header .nav {
-  gap: 1.5625rem;
+@media screen and (max-width: 47.5rem) {
+  .header .nav {
+    z-index: 100;
+    top: 1rem;
+    right: 0;
+    position: fixed;
+    width: 50vw;
+    height: 85vh;
+    -webkit-box-shadow: 0 0 1.875rem -1.25rem #707070;
+            box-shadow: 0 0 1.875rem -1.25rem #707070;
+    background: #f5f9fa;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .nav .nav__close-btn {
+    position: relative;
+    padding: 0.625rem;
+  }
+  .header .nav .nav__close-btn i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    color: #707070;
+    text-align: center;
+  }
+  .header .nav .nav__link {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #707070;
+  }
+  .header .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.header .nav .nav__link {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #707070;
-  position: relative;
-  overflow-x: hidden;
-  padding: 10px 0;
+@media screen and (min-width: 47.5rem) {
+  .header .nav {
+    gap: 1.5625rem;
+  }
+  .header .nav .nav__link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #707070;
+    position: relative;
+    overflow-x: hidden;
+    padding: 10px 0;
+  }
+  .header .nav .nav__link::after {
+    position: absolute;
+    content: "";
+    background: #50d890;
+    display: block;
+    width: 100%;
+    height: 4px;
+    -webkit-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+  }
+  .header .nav .nav__link:hover::after {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
-.header .nav .nav__link::after {
-  position: absolute;
-  content: "";
-  background: #50d890;
-  display: block;
-  width: 100%;
-  height: 4px;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-
-.header .nav .nav__link:hover::after {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero-section {
@@ -221,7 +302,7 @@ a:visited {
 }
 
 .hero-section .hero-texts .hero-texts__subtitle {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   padding-left: 0.3125rem;
   border-left: 0.3125rem dotted #50d890;
@@ -323,7 +404,7 @@ a:visited {
 }
 
 .benefits .benefit .benefit__description::first-line {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -405,11 +486,11 @@ a:visited {
 }
 
 .requirements .requirement .requirement__icon {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .requirements .requirement .requirement__title {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .requirements .requirement .requirement__description {
@@ -451,6 +532,15 @@ a:visited {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.float-menu {
+  position: fixed;
+  right: 1rem;
+  top: 5rem;
+  height: auto;
+  background: #50d890;
+  padding: 1.25rem 2rem;
 }
 
 .footer {

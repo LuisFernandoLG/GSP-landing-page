@@ -48,6 +48,9 @@ a:visited {
   &-jc-sb {
     justify-content: space-between;
   }
+  &-jc-r {
+    justify-content: right;
+  }
 }
 
 // Visibility
@@ -61,6 +64,12 @@ a:visited {
 .hide-for-desktop {
   @include breakpoint-down(medium) {
     display: none;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
   }
 }
 
@@ -84,4 +93,6 @@ html {
   @include breakpoint-up(medium) {
     font-size: 14px;
   }
+
+  scroll-behavior: smooth;
 }
