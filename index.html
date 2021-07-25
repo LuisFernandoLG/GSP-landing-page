@@ -45,17 +45,18 @@
           <a href="#" class="hide-for-desktop nav__close-btn">
             <i class="far fa-times-circle"></i>
           </a>
-          <a href="#" class="nav__link">Acerca</a>
+          <a href="#about" class="nav__link">Acerca</a>
           <a href="#" class="nav__link">Programas</a>
-          <a href="#" class="nav__link">Contacto</a>
+          <a href="#contact" class="nav__link">Contacto</a>
           <a href="#benefits" class="nav__link">Beneficios</a>
           <a href="#requirements" class="nav__link">Requisitos</a>
+          <a href="#location" class="nav__link">Localización</a>
           <!-- <a href="#requirements" class="nav__link">Requisitos</a> -->
         </nav>
       </header>
 
       <section class="hero-section lazy-load">
-        <div class="hero-texts flex flex-fd-c flex-ai-c flex-jc-c">
+        <div class="hero-texts flex flex-fd-c">
           <h1 class="hero-texts__title">¡Sé parte de la familia GSP!</h1>
           <h2 class="hero-texts__subtitle">
             Ayudando a los jovenes estudiantes a alcanzar sus sueños.
@@ -128,7 +129,7 @@
           </div>
         </section>
 
-        <section class="scholarship-counter flex flex-ai-c flex-jc-c">
+        <section class="scholarship-counter flex flex-ai-c flex-jc-c lazy-load">
           <div class="scholarship-counter__image flex flex-ai-c flex-jc-c">
             <!-- <img src="./app/img/bookLover.svg" alt="book lover" /> -->
             <svg
@@ -925,7 +926,7 @@
 
       </section> -->
 
-        <section class="requirements lazy-load spy-bar" id="requirements">
+        <section class="requirements lazy-load" id="requirements">
           <h2 class="requirements__title">Requisitos</h2>
 
           <div class="requirement flex flex-ai-c">
@@ -954,6 +955,55 @@
                 Estudiar en una preparatoria pública.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section class="location lazy-load" id="location">
+          <h2 class="location__title">Localización</h2>
+          <div class="location-content"></div>
+        </section>
+
+        <section class="about flex flex-ai-c lazy-load" id="about">
+          <div class="about__image">
+            <img src="./app/img/teamWork.svg" alt="team work" />
+          </div>
+          <div>
+            <h2 class="about__title">Acerca de GSP</h2>
+            <p class="about__description">
+              Green Scholarship program es una organización sin fines de lucro
+              que ayuda a jóvenes a través de la educación a construir un mejor
+              futuro para ellos, sus familias, su comunidad y México.
+            </p>
+          </div>
+        </section>
+
+        <section class="contact-section lazy-load" id="contact">
+          <h2 class="contacts__title">Contáctanos</h2>
+
+          <div class="contacts flex flex-ai-c flex-jc-c">
+            <a
+              href="https://www.facebook.com/greenscholarshipprogram"
+              class="contact"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/programabecasgreen/"
+              class="contact"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://wa.me/526241050985"
+              class="contact"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
           </div>
         </section>
 
@@ -1032,20 +1082,6 @@
           </figure>
         </section> -->
       </main>
-
-      <!-- <aside class="aside float-menu">
-        <ul>
-          <li>
-            <a href="#benefits">Beneficios</a>
-          </li>
-          <li>
-            <a href="#requirements">Requisitos</a>
-          </li>
-          <li>
-            <a href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </aside> -->
 
       <footer class="footer flex flex-ai-c flex-jc-c lazy-load">
         <p>© Green Scholarship Program | Programa de Becas Green.</p>

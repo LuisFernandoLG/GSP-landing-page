@@ -1,9 +1,13 @@
 .header {
-  height: 80px;
+  height: 5rem;
+  // width: 100vw;
+
   position: sticky;
   top: 0;
+  left: 1px;
   background: $primary-color;
   z-index: 50;
+  // box-shadow: 0 1.25rem 2.6rem -2.5rem $tertiary-color;
 
   // background: red;
 

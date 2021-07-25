@@ -1,0 +1,25 @@
+.location {
+  margin-top: 3.125rem;
+
+  .location__title {
+    font-size: $h2;
+    text-align: center;
+    margin: 1.25rem;
+  }
+
+  .location__map {
+    width: 100%;
+    height: 21.875rem;
+
+    box-shadow: $box-shadow-light;
+
+    border: none;
+    border-radius: 1rem;
+  }
+
+  .location__link-map {
+    img {
+      width: 50%;
+    }
+  }
+}

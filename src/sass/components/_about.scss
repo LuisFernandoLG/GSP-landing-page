@@ -1,0 +1,29 @@
+.about {
+  margin-top: 3.125rem;
+
+  .about__title {
+    font-size: $h2;
+    text-align: center;
+    line-height: 2;
+  }
+
+  gap: 1.25rem;
+
+  .about__description {
+    line-height: 2;
+    text-align: justify;
+  }
+
+  @include breakpoint-up(medium) {
+    flex-direction: column;
+  }
+
+  @include breakpoint-down(medium) {
+    .about__image {
+      flex-basis: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
