@@ -1,10 +1,14 @@
 .about {
   margin-top: 3.125rem;
+  border-top: 0.5rem dotted $secondary-color;
+  border-bottom: 0.5rem dotted $secondary-color;
+  padding: 1.875rem 0;
 
   .about__title {
     font-size: $h2;
     text-align: center;
     line-height: 2;
+    position: relative;
   }
 
   gap: 1.25rem;
@@ -25,5 +29,35 @@
         width: 100%;
       }
     }
+  }
+}
+
+// Animations
+
+.about {
+  .about__title {
+    &::after {
+      width: 2.5rem;
+      height: 2.5rem;
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background: $secondary-color;
+
+      animation: square-dancing 3s infinite alternate ease;
+    }
+  }
+}
+
+@keyframes square-dancing {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }

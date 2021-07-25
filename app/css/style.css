@@ -581,6 +581,9 @@ html {
 
 .about {
   margin-top: 3.125rem;
+  border-top: 0.5rem dotted #50d890;
+  border-bottom: 0.5rem dotted #50d890;
+  padding: 1.875rem 0;
   gap: 1.25rem;
 }
 
@@ -588,6 +591,7 @@ html {
   font-size: 2.5rem;
   text-align: center;
   line-height: 2;
+  position: relative;
 }
 
 .about .about__description {
@@ -611,6 +615,40 @@ html {
   }
   .about .about__image img {
     width: 100%;
+  }
+}
+
+.about .about__title::after {
+  width: 2.5rem;
+  height: 2.5rem;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #50d890;
+  -webkit-animation: square-dancing 3s infinite alternate ease;
+          animation: square-dancing 3s infinite alternate ease;
+}
+
+@-webkit-keyframes square-dancing {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.5);
+            transform: rotate(0deg) scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes square-dancing {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.5);
+            transform: rotate(0deg) scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
   }
 }
 
