@@ -15,7 +15,12 @@ $num-steps: 4;
   .selection-process__image {
     margin-top: $margin-top-section;
     img {
-      width: 30%;
+      @include breakpoint-up(medium) {
+        width: 60%;
+      }
+      @include breakpoint-down(medium) {
+        width: 30%;
+      }
     }
   }
 

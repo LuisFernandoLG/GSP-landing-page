@@ -778,8 +778,16 @@ html {
   margin-top: 3.125rem;
 }
 
-.selection-process .selection-process__image img {
-  width: 30%;
+@media screen and (max-width: 47.5rem) {
+  .selection-process .selection-process__image img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 47.5rem) {
+  .selection-process .selection-process__image img {
+    width: 30%;
+  }
 }
 
 .selection-process .wave {
