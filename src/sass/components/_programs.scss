@@ -1,0 +1,58 @@
+.programs-section {
+  width: 100%;
+  margin-top: $margin-top-section;
+
+  .programs-section__title {
+    text-align: center;
+    font-size: $h2;
+    margin-bottom: 3.125rem;
+  }
+
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    gap: 1.25rem;
+
+    .program {
+      gap: 1rem;
+
+      box-shadow: $box-shadow-light;
+      padding: 1rem;
+      cursor: pointer;
+      &:hover > .program__image {
+        transform: scale(1.15);
+      }
+
+      .program__image {
+        transition: transform 300ms ease;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .program__name {
+        text-align: center;
+        font-size: $h3;
+      }
+
+      .program__description {
+        text-align: center;
+        flex-grow: 1;
+        line-height: 2;
+        font-size: $p;
+      }
+    }
+  }
+}
+
+@keyframes dance {
+  0% {
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}

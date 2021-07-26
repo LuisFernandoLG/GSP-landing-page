@@ -1,5 +1,5 @@
 .contact-section {
-  margin-top: 3.125rem;
+  margin-top: $margin-top-section;
 
   .contacts__title {
     font-size: $h2;
@@ -14,5 +14,10 @@
     font-size: 3.125rem;
     color: $tertiary-color;
     line-height: 2;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }

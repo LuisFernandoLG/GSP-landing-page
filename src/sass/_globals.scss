@@ -67,10 +67,20 @@ a:visited {
   }
 }
 
-ul {
+ul,
+ol {
   li {
     list-style: none;
   }
+}
+
+// Button
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
 }
 
 // Selected text

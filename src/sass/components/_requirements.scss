@@ -1,5 +1,5 @@
 .requirements {
-  margin-top: 3.125rem;
+  margin-top: $margin-top-section;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
   gap: 1.25rem;

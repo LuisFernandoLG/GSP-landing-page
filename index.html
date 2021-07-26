@@ -34,23 +34,23 @@
           <img src="./app/img/logo2.svg" alt="gsp" />
         </a>
 
-        <div class="menu flex flex-fd-c hide-for-desktop">
+        <button class="menu flex flex-fd-c hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <!-- class hide-for-mobiles -->
         <nav class="nav flex">
-          <a href="#" class="hide-for-desktop nav__close-btn">
+          <button class="hide-for-desktop nav__close-btn">
             <i class="far fa-times-circle"></i>
-          </a>
-          <a href="#about" class="nav__link">Acerca</a>
-          <a href="#" class="nav__link">Programas</a>
-          <a href="#contact" class="nav__link">Contacto</a>
+          </button>
           <a href="#benefits" class="nav__link">Beneficios</a>
           <a href="#requirements" class="nav__link">Requisitos</a>
           <a href="#location" class="nav__link">Localización</a>
+          <a href="#about" class="nav__link">Acerca</a>
+          <a href="#contact" class="nav__link">Contacto</a>
+          <a href="#programs" class="nav__link">Programas</a>
           <!-- <a href="#requirements" class="nav__link">Requisitos</a> -->
         </nav>
       </header>
@@ -956,6 +956,16 @@
               </p>
             </div>
           </div>
+
+          <div class="requirement flex flex-ai-c">
+            <i class="far fa-money-bill-alt requirement__icon"></i>
+            <div>
+              <h3 class="requirement__title">Necesidad económica</h3>
+              <p class="requirement__description">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="location lazy-load" id="location">
@@ -1005,6 +1015,89 @@
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
+        </section>
+
+        <section class="programs-section lazy-load" id="programs">
+          <h2 class="programs-section__title">Programas</h2>
+          <ul class="programs">
+            <li class="program flex flex-fd-c flex-ai-c flex-jc-c">
+              <div class="program__image">
+                <img
+                  src="./app/img/programs/hospitality.svg"
+                  alt="hospitality program icon"
+                />
+              </div>
+              <h3 class="program__name">Green Hospitality Program</h3>
+              <p class="program__description">
+                La capacitación ofrece un desarrollo profesional que incluye:
+                habilidades para la vida, conceptos básicos de hospitalidad,
+                idioma inglés y valores fundamentales.
+              </p>
+            </li>
+            <li class="program flex flex-fd-c flex-ai-c flex-jc-c">
+              <div class="program__image">
+                <img src="./app/img/logo2.svg" alt="GSP" />
+              </div>
+              <h3 class="program__name">Green Scholarship Program</h3>
+              <p class="program__description">
+                Ofrece un sistema de apoyo integral a todos sus estudiantes. Las
+                becas se otorgan después de un proceso de contratación anual.
+                Todos los estudiantes deben cumplir con los criterios de
+                selección.
+              </p>
+            </li>
+            <li class="program flex flex-fd-c flex-ai-c flex-jc-c">
+              <div class="program__image">
+                <img src="./app/img/programs/marine.svg" alt="Marine" />
+              </div>
+              <h3 class="program__name">Marine Biology Program</h3>
+              <p class="program__description">
+                El Programa de Biología Marina patrocina específicamente a
+                estudiantes que estudian carreras de biología marina o ciencias
+                ambientales en la universidad UABCS en BCS, México.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="selection-process">
+          <h2 class="selection-process__title">Proceso de selección</h2>
+
+          <div class="selection-process__image flex flex-ai-c flex-jc-c">
+            <img src="./app/img/search.svg" alt="selection" />
+          </div>
+
+          <div class="wave">
+            <img src="./app/img/wave.svg" alt="wave" />
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <h3 class="step__number">1</h3>
+              <h4 class="step__title">Solicitud</h4>
+              <p class="step__description">
+                Llenar la solicitud y traerla a las oficinas de GSP.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__number">2</h3>
+              <h4 class="step__title">Espera</h4>
+              <p class="step__description">Esperar a que GSP te contácte.</p>
+            </li>
+            <li class="step">
+              <h3 class="step__number">3</h3>
+              <h4 class="step__title">Entrevista</h4>
+              <p class="step__description">
+                Asistir a la entrevista con nuestra mesa directiva.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__number">4</h3>
+              <h4 class="step__title">Respuesta</h4>
+              <p class="step__description">
+                Esperar a la llamada de GSP con la respuesta final.
+              </p>
+            </li>
+          </ol>
         </section>
 
         <!-- <section class="graduates">

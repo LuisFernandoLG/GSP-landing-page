@@ -1,5 +1,5 @@
 .scholarship-counter {
-  margin-top: 5rem;
+  margin-top: $margin-top-section;
   width: 100%;
 
   @include breakpoint-up(medium) {

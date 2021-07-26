@@ -80,8 +80,16 @@ a:visited {
   }
 }
 
-ul li {
+ul li,
+ol li {
   list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 *::-moz-selection {
@@ -276,7 +284,7 @@ html {
 
 .hero-section {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +388,7 @@ html {
 }
 
 .benefits {
-  margin-top: 3.75rem;
+  margin-top: 3.125rem;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -421,7 +429,7 @@ html {
 }
 
 .scholarship-counter {
-  margin-top: 5rem;
+  margin-top: 3.125rem;
   width: 100%;
 }
 
@@ -669,10 +677,168 @@ html {
   font-size: 3.125rem;
   color: #707070;
   line-height: 2;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.contact-section .contact:hover {
+  color: #50d890;
+}
+
+.programs-section {
+  width: 100%;
+  margin-top: 3.125rem;
+}
+
+.programs-section .programs-section__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3.125rem;
+}
+
+.programs-section .programs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+  gap: 1.25rem;
+}
+
+.programs-section .programs .program {
+  gap: 1rem;
+  -webkit-box-shadow: 0 0 1.875rem -1.25rem #707070;
+          box-shadow: 0 0 1.875rem -1.25rem #707070;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.programs-section .programs .program:hover > .program__image {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.programs-section .programs .program .program__image {
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.programs-section .programs .program .program__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.programs-section .programs .program .program__name {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.programs-section .programs .program .program__description {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+@-webkit-keyframes dance {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes dance {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.selection-process {
+  margin-top: 3.125rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.selection-process .selection-process__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.selection-process .selection-process__image {
+  margin-top: 3.125rem;
+}
+
+.selection-process .selection-process__image img {
+  width: 40%;
+}
+
+.selection-process .wave {
+  width: 100%;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.selection-process .steps {
+  background: #50d890;
+  padding: 1.25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.selection-process .steps .step {
+  padding: 1.25rem;
+  background: #f5f9fa;
+  color: #707070;
+  -webkit-box-shadow: 0 0 1.875rem -1.25rem #707070;
+          box-shadow: 0 0 1.875rem -1.25rem #707070;
+  -webkit-transition: -webkit-box-shadow 500ms ease;
+  transition: -webkit-box-shadow 500ms ease;
+  transition: box-shadow 500ms ease;
+  transition: box-shadow 500ms ease, -webkit-box-shadow 500ms ease;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.selection-process .steps .step .step__number {
+  font-size: 2.5rem;
+  text-align: center;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.selection-process .steps .step:hover > .step__number {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.selection-process .steps .step .step__title {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.selection-process .steps .step .step__description {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 2;
 }
 
 .footer {
-  margin-top: 3rem;
+  margin-top: 3.125rem;
   font-weight: 700;
   background: #f5f9fa;
 }
