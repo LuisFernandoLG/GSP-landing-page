@@ -387,9 +387,17 @@ html {
   }
 }
 
-.benefits {
+.benefits-section {
   margin-top: 3.125rem;
   width: 100%;
+}
+
+.benefits-section .benefits-section__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.benefits-section .benefits {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
@@ -397,13 +405,7 @@ html {
   gap: 20px;
 }
 
-.benefits .benefits__title {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.benefits .benefit {
+.benefits-section .benefit {
   background: #f5f9fa;
   -webkit-box-shadow: 0 0 1.875rem -1.25rem #707070;
           box-shadow: 0 0 1.875rem -1.25rem #707070;
@@ -413,17 +415,17 @@ html {
   border-radius: 1rem;
 }
 
-.benefits .benefit .benefit__icon {
+.benefits-section .benefit .benefit__icon {
   color: #707070;
 }
 
-.benefits .benefit .benefit__description {
+.benefits-section .benefit .benefit__description {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 2;
 }
 
-.benefits .benefit .benefit__description::first-line {
+.benefits-section .benefit .benefit__description::first-line {
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -822,6 +824,9 @@ html {
 
 .selection-process .steps .step .step__number {
   font-size: 2.5rem;
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
   text-align: center;
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;

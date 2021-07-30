@@ -47,8 +47,10 @@ $num-steps: 4;
 
       .step__number {
         font-size: $h2;
+        display: inline-block;
+        width: 100%;
+        font-weight: 600;
         text-align: center;
-
         transition: transform 300ms ease;
       }
 

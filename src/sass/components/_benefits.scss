@@ -1,15 +1,16 @@
-.benefits {
+.benefits-section {
   margin-top: $margin-top-section;
   width: 100%;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-
-  .benefits__title {
-    grid-column: 1 / -1;
+  .benefits-section__title {
     text-align: center;
     font-size: $h2;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
   }
 
   .benefit {

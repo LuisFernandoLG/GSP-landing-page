@@ -7,8 +7,9 @@
       name="description"
       content="Green Scholarship Program es un programa de becas para jovenes."
     />
+    <meta name="description" />
 
-    <title>GSP</title>
+    <title>Green Schoolarship Program</title>
     <link rel="stylesheet" href="./app/css/style.css" />
 
     <link rel="shortcut icon" href="./app/img/logo2.svg" type="image/x-icon" />
@@ -33,7 +34,7 @@
   <body>
     <div class="container">
       <header class="header flex flex-jc-sb flex-ai-c">
-        <a href="/" class="logo">
+        <a href="https://confident-wing-21f7a8.netlify.app/" class="logo">
           <img src="./app/img/logo2.svg" alt="gsp" />
         </a>
 
@@ -48,12 +49,36 @@
           <button class="hide-for-desktop nav__close-btn">
             <i class="far fa-times-circle"></i>
           </button>
-          <a href="#benefits" class="nav__link">Beneficios</a>
-          <a href="#requirements" class="nav__link">Requisitos</a>
-          <a href="#location" class="nav__link">Localización</a>
-          <a href="#about" class="nav__link">Acerca</a>
-          <a href="#contact" class="nav__link">Contacto</a>
-          <a href="#programs" class="nav__link">Programas</a>
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#benefits"
+            class="nav__link"
+            >Beneficios</a
+          >
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#requirements"
+            class="nav__link"
+            >Requisitos</a
+          >
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#location"
+            class="nav__link"
+            >Localización</a
+          >
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#about"
+            class="nav__link"
+            >Acerca</a
+          >
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#contact"
+            class="nav__link"
+            >Contacto</a
+          >
+          <a
+            href="https://confident-wing-21f7a8.netlify.app/#programs"
+            class="nav__link"
+            >Programas</a
+          >
           <!-- <a href="#requirements" class="nav__link">Requisitos</a> -->
         </nav>
       </header>
@@ -61,9 +86,9 @@
       <section class="hero-section lazy-load">
         <div class="hero-texts flex flex-fd-c">
           <h1 class="hero-texts__title">¡Sé parte de la familia GSP!</h1>
-          <h2 class="hero-texts__subtitle">
+          <p class="hero-texts__subtitle">
             Ayudando a los jovenes estudiantes a alcanzar sus sueños.
-          </h2>
+          </p>
           <a
             href="https://quizzical-lovelace-9a7d54.netlify.app/"
             class="hero-text__btn primary-button"
@@ -76,59 +101,71 @@
       </section>
 
       <main>
-        <section class="benefits lazy-load" id="benefits">
-          <h2 class="benefits__title">Beneficios</h2>
+        <section class="benefits-section lazy-load" id="benefits">
+          <h2 class="benefits-section__title">Beneficios</h2>
 
-          <div class="benefit flex flex-ai-c">
-            <i class="fas fa-money-check-alt benefit__icon"></i>
-            <p class="benefit__description">
-              Colegiatura
-              <br />
-              Pago 100% de la colegiatura
-            </p>
-          </div>
-          <div class="benefit flex flex-ai-c">
-            <i class="fas fa-comments benefit__icon"></i>
-            <p class="benefit__description">
-              Seminarios
-              <br />
-              Habilidades seminarios de vida.
-            </p>
-          </div>
-          <div class="benefit flex flex-ai-c">
-            <i class="fas fa-bus benefit__icon"></i>
-            <p class="benefit__description">
-              Transporte
-              <br />
-              Transporte.
-            </p>
-          </div>
-          <div class="benefit flex flex-ai-c">
-            <i class="fas fa-globe-americas benefit__icon"></i>
-            <p class="benefit__description">
-              Clases de inglés
-              <br />
+          <ul class="benefits">
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-money-check-alt benefit__icon"></i>
+              <p class="benefit__description">
+                Colegiatura
+                <br />
+                El pago de todas las mensualidades o trimestres de la carrera.
+              </p>
+            </li>
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-comments benefit__icon"></i>
+              <p class="benefit__description">
+                Seminarios
+                <br />
+                Habilidades seminarios de vida.
+              </p>
+            </li>
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-bus benefit__icon"></i>
+              <p class="benefit__description">
+                Transporte
+                <br />
+                Si la universidad no se encuentra en tu localidad, apoyo de
+                transporte.
+              </p>
+            </li>
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-globe-americas benefit__icon"></i>
+              <p class="benefit__description">
+                Clases de inglés
+                <br />
+                Clases intensivas de inglés.
+              </p>
+            </li>
+            <li class="benefit flex flex-ai-c">
+              <i class="far fa-laugh-beam benefit__icon"></i>
+              <p class="benefit__description">
+                Apoyo emocional.
+                <br />
+                Acceso a ayuda profesional por parte de un psicólogo.
+              </p>
+            </li>
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-check benefit__icon"></i>
+              <p class="benefit__description">
+                Cursos opcionales
+                <br />
+                Clubs de inglés, Clases de natación, talleres de nutrición,
+                clases de canto, etc.
+              </p>
+            </li>
 
-              Clases intensivas de inglés.
-            </p>
-          </div>
-          <div class="benefit flex flex-ai-c">
-            <i class="far fa-laugh-beam benefit__icon"></i>
-            <p class="benefit__description">
-              Apoyo emocional.
-              <br />
-              Acceso a ayuda profesional por parte de un psicólogo.
-            </p>
-          </div>
-          <div class="benefit flex flex-ai-c">
-            <i class="fas fa-check benefit__icon"></i>
-            <p class="benefit__description">
-              Cursos opcionales
-              <br />
-              Clubs de inglés, Clases de natación, talleres de nutrición, clases
-              de canto, etc.
-            </p>
-          </div>
+            <li class="benefit flex flex-ai-c">
+              <i class="fas fa-book benefit__icon"></i>
+
+              <p class="benefit__description">
+                Libros
+                <br />
+                Compra de libros en caso de que la carrera lo solicite.
+              </p>
+            </li>
+          </ul>
         </section>
 
         <section class="scholarship-counter flex flex-ai-c flex-jc-c lazy-load">
@@ -1072,26 +1109,26 @@
           </div>
           <ol class="steps">
             <li class="step">
-              <h3 class="step__number">1</h3>
+              <span class="step__number">1</span>
               <h4 class="step__title">Solicitud</h4>
               <p class="step__description">
                 Llenar la solicitud y traerla a las oficinas de GSP.
               </p>
             </li>
             <li class="step">
-              <h3 class="step__number">2</h3>
+              <span class="step__number">2</span>
               <h4 class="step__title">Espera</h4>
               <p class="step__description">Esperar a que GSP te contácte.</p>
             </li>
             <li class="step">
-              <h3 class="step__number">3</h3>
+              <span class="step__number">3</span>
               <h4 class="step__title">Entrevista</h4>
               <p class="step__description">
                 Asistir a la entrevista con nuestra mesa directiva.
               </p>
             </li>
             <li class="step">
-              <h3 class="step__number">4</h3>
+              <span class="step__number">4</span>
               <h4 class="step__title">Respuesta</h4>
               <p class="step__description">
                 Esperar a la llamada de GSP con la respuesta final.
@@ -1099,81 +1136,6 @@
             </li>
           </ol>
         </section>
-
-        <!-- <section class="graduates">
-          <h2 class="graduates__title">Graduates</h2>
-
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-          <figure class="graduate flex flex-ai-c">
-            <div class="graduate__photo">
-              <img
-                src="https://gspcabo.org/wp-content/uploads/2021/04/Jesika-Oseguera.jpg"
-                alt="grduate"
-              />
-            </div>
-
-            <figcaption class="graduate__name">Jesika</figcaption>
-          </figure>
-        </section> -->
       </main>
 
       <footer class="footer flex flex-ai-c flex-jc-c lazy-load">
