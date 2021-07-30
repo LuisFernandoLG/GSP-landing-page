@@ -74,7 +74,7 @@ a:visited {
   }
 }
 
-@media screen and (min-width: 47.5rem) {
+@media screen and (min-width: 64rem) {
   .hide-for-desktop {
     display: none;
   }
@@ -189,7 +189,7 @@ html {
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 47.5rem) {
+@media screen and (max-width: 64rem) {
   .header .nav {
     z-index: 100;
     top: 1rem;
@@ -246,7 +246,7 @@ html {
   }
 }
 
-@media screen and (min-width: 47.5rem) {
+@media screen and (min-width: 64rem) {
   .header .nav {
     gap: 1.5625rem;
   }

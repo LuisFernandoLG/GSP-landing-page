@@ -36,7 +36,7 @@
   }
 
   // Mobile Menu
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     .nav {
       z-index: 100;
       top: 1rem;
@@ -87,7 +87,7 @@
   }
 
   // Desktop menu
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(large) {
     .nav {
       gap: 1.5625rem;
 

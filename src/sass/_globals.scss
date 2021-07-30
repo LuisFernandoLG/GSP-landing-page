@@ -62,7 +62,7 @@ a:visited {
 }
 
 .hide-for-desktop {
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(large) {
     display: none;
   }
 }
