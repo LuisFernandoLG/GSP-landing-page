@@ -2,4 +2,4 @@
 
 ##Versión mejor estructurada
 
-page [GSP](https://confident-wing-21f7a8.netlify.app/)
+page [GSP](https://gspcabo.netlify.app/)
